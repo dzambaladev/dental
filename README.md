@@ -18,7 +18,7 @@ The repository can be published using GitHub Pages: in repository Settings → P
 1. Confirm that the displayed address is exactly the clinic's public address.
 2. Confirm the preferred public name: GogitaDent is used as the brand on this site.
 3. Review every service label against the actual clinic service list. The service cards are intentionally generic until the official list is checked.
-4. Transcribe and verify the price list before publishing prices. No prices have been guessed or added here.
+4. The website now includes a responsive price-list gallery using the eight original image files in `прайс/`. Each image opens in full size in a new tab; prices are not retyped, so the original clinic price sheets remain the source of truth.
 5. Test phone and messaging links on an actual phone. WhatsApp links use the supplied phone numbers; Telegram links may depend on Telegram's phone-number privacy and account settings.
 6. Add the final domain to canonical/Open Graph metadata and connect Google Search Console after choosing the domain.
 7. Verify that each photo is the intended image and add alt text that describes the actual photo. Image file names were used because the images could not be visually inspected through the repository connector.
