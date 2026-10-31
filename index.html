@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5faf8">
-  <meta name="description" content="GogitaDent — стоматологічна клініка в Харкові на проспекті Науки, 12. Дбайливе ставлення, зрозуміла вартість і зручне розташування біля метро.">
+  <meta name="description" content="GogitaDent — стоматологічна клініка в Харкові, проспект Науки, 12. Терапевтична стоматологія, ортодонтія, протезування, хірургія та імплантація. Запис телефоном.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="GogitaDent — стоматологія в Харкові">
-  <meta property="og:description" content="Стоматологічна клініка на проспекті Науки, 12. Запис телефоном або в месенджері.">
+  <meta property="og:title" content="GogitaDent — стоматологічна клініка в Харкові">
+  <meta property="og:description" content="Комплексна стоматологічна допомога в Харкові на проспекті Науки, 12. Перегляньте послуги та прайс-лист. Запис телефоном.">
   <meta property="og:image" content="photo_2026-10-26_14-43-49.jpg">
   <title>GogitaDent — стоматологія в Харкові</title>
   <link rel="stylesheet" href="styles.css">
@@ -16,15 +16,29 @@
     "@context": "https://schema.org",
     "@type": "Dentist",
     "name": "GogitaDent",
+    "legalName": "Willkommen Clinic",
+    "description": "Стоматологічна клініка в Харкові. Терапевтична стоматологія, ортодонтія, протезування, хірургічна стоматологія та імплантація.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "проспект Науки, 12",
       "addressLocality": "Харків",
+      "addressRegion": "Харківська область",
       "addressCountry": "UA"
     },
     "telephone": ["+380677130913", "+380679005418"],
-    "openingHours": ["Mo-Fr 09:00-19:00"],
-    "availableLanguage": ["uk", "ru"]
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    }],
+    "availableService": [
+      {"@type": "MedicalProcedure", "name": "Терапевтична стоматологія"},
+      {"@type": "MedicalProcedure", "name": "Ортодонтія"},
+      {"@type": "MedicalProcedure", "name": "Протезування зубів"},
+      {"@type": "MedicalProcedure", "name": "Хірургічна стоматологія"},
+      {"@type": "MedicalProcedure", "name": "Імплантація зубів"}
+    ]
   }
   </script>
 </head>
@@ -172,15 +186,13 @@
         <div class="visit-copy">
           <p class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span><span data-i18n="visitEyebrow">ЗАПИС НА ПРИЙОМ</span></p>
           <h2 data-i18n="visitTitle">Почнімо з <em>розмови.</em></h2>
-          <p data-i18n="visitText">Зателефонуйте або напишіть у месенджер, щоб уточнити послуги та домовитися про візит.</p>
+          <p data-i18n="visitText">Зателефонуйте, щоб уточнити послуги та домовитися про зручний час візиту.</p>
           <div class="visit-buttons">
             <a class="button button-light" href="tel:+380677130913" data-i18n="callUs">Записатися телефоном <span aria-hidden="true">↗</span></a>
-            <a class="button button-outline-light" href="https://wa.me/380677130913" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
-            <a class="button button-outline-light" href="https://t.me/+380677130913" target="_blank" rel="noopener noreferrer">Telegram ↗</a>
           </div>
         </div>
         <div class="contact-card">
-          <div class="contact-block"><span class="contact-label" data-i18n="phoneLabel">ТЕЛЕФОНИ ТА МЕСЕНДЖЕРИ</span><a href="tel:+380677130913">067 713 09 13</a><a href="tel:+380679005418">067 900 54 18</a></div>
+          <div class="contact-block"><span class="contact-label" data-i18n="phoneLabel">ТЕЛЕФОНИ ДЛЯ ЗАПИСУ</span><a href="tel:+380677130913">067 713 09 13</a><a href="tel:+380679005418">067 900 54 18</a></div>
           <div class="contact-divider"></div>
           <div class="contact-block"><span class="contact-label" data-i18n="addressLabel">АДРЕСА</span><p data-i18n="addressText">м. Харків, проспект Науки, 12</p><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=проспект+Науки+12+Харків" target="_blank" rel="noopener noreferrer"><span data-i18n="openMap">Відкрити на карті</span> ↗</a></div>
           <div class="contact-divider"></div>
